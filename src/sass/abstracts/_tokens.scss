@@ -1,0 +1,9 @@
+@use './sizes' as *;
+@use './typography' as *;
+@use './colors' as *;
+
+// gloabal tokens 
+$p-2: $size-2 $size-4;
+$p-4: $size-4 $size-8;
+
+$body-bg: map-get($clr-neutral, 500)
