@@ -1,0 +1,58 @@
+@use '../abstracts/' as *;
+
+.header{
+    @include flex_box($justify : space-between);
+    height: $header-h;
+    position: relative;
+
+    &__icon{
+        z-index: 999;
+        font-size: $fs-800;
+        color: map-get($clr-primary, 500 );
+    }
+
+    &__menu{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 80%;
+        background-color: $heade-menu-bg-mobile;
+        @include flex_box($direction : column);
+        
+        &-nav{
+            list-style: none;
+            @include flex_box($direction : column,$align : flex-start);
+
+            & a{
+                text-decoration: none;
+                font-size: $header-nav-menu-fs;
+                font-weight: $header-nav-menu-fw;
+                color: $header-nav-menu-clr;
+            }
+        }
+
+        &-btns{
+            margin-top: 20px;
+            width: 100%;
+            @include flex_box($direction : column, $row-gap: 10px);
+            
+            & button{
+                width: 75%;
+                padding: $size-2 0;
+                border: none;
+                border-radius: $size-1;
+                background-color: map-get($clr-primary, 200 );
+                color: map-get($clr-neutral, 800 );
+                font-weight: $fw-semibold;
+                font-size: calc($header-nav-menu-fs * .65);
+                
+                &:is(:hover, :focus){
+                    background-color: map-get($clr-primary, 500 );
+                    color: map-get($clr-neutral, 400 );
+                }
+            }
+        }
+    }
+    
+}

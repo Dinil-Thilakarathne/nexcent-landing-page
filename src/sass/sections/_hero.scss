@@ -1,0 +1,32 @@
+@use '../abstracts/' as *;
+
+.hero{
+    height: $hero-h;
+    @include flex_box($direction : column-reverse, $justify: space-around);
+
+    &-content{
+        @include flex_box($direction : column, $align: flex-start, $row-gap: 10px);
+
+        &__header{
+            font-size: $hero-content-header-fs;
+        }
+        &__description{
+            font-size: $hero-content-description-fs;
+        }
+        &__btn{
+            padding: $p-2;
+            border: none;
+            border-radius: $size-1;
+            background-color: map-get($clr-primary, 500 );
+            color: #fff;
+            font-weight: $fw-semibold;
+            
+            &:is(:hover, :focus){
+                background-color: map-get($clr-primary, 400 );
+            }
+        }
+    }
+    &-img{
+        width: 80%;
+    }
+}

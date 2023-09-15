@@ -6,4 +6,16 @@
 $p-2: $size-2 $size-4;
 $p-4: $size-4 $size-8;
 
-$body-bg: map-get($clr-neutral, 500)
+$body-bg: map-get($clr-neutral, 500);
+
+// header 
+$heade-menu-bg-mobile: map-get($clr-primary, 400);
+$header-h : 75px;
+$header-nav-menu-clr: map-get($clr-neutral, 800 );
+$header-nav-menu-fs: $fs-700;
+$header-nav-menu-fw: $fw-semibold;
+
+// hero seciton 
+$hero-h : calc(100vh - $header-h);
+$hero-content-header-fs: $fs-800;
+$hero-content-description-fs: $fs-300;

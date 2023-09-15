@@ -11,9 +11,10 @@ export const navLinks = [
 
 export const heroContent = {
     header : "Lessons and insights from 8 years",
-    subheader : "Where to grow your business as a photographer: site or social media?",
+    description: "Where to grow your business as a photographer: site or social media?",
     cta : "Register",
     imgUrl : heroImg,
+    imgAlt : "hero image"
 }
 
 export const clients = [
