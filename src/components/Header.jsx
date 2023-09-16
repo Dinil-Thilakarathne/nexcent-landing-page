@@ -6,6 +6,11 @@ import { motion } from "framer-motion";
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false)
 
+    // framer motion props 
+    const headerInitial = {y: -100, height: 0, overflow: 'hidden'}
+    const headerAnimate = {y: 0, height: 75, overflow: 'visible'}
+    const headerTransition = {duration : .5 ,overflow : {delay: .75}}
+
     const sidebar = {
         open: (height = 1000) => ({
           clipPath: `circle(${height * 2 + 200}px at 90% 40px)`,
@@ -27,7 +32,12 @@ const Header = () => {
     };
 
     return (
-        <div className="header section">
+        <motion.div 
+            className="header section"
+            initial={headerInitial}
+            animate={headerAnimate}
+            transition={headerTransition}
+        >
              <div className="header__logo">
                 <img src={logo} alt="" />
              </div>
@@ -57,7 +67,7 @@ const Header = () => {
                     </button>
                 </div>
              </motion.nav>
-        </div>
+        </motion.div>
     )
 }
 

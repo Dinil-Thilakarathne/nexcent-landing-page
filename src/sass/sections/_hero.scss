@@ -23,6 +23,7 @@
             
             &:is(:hover, :focus){
                 background-color: map-get($clr-primary, 400 );
+                cursor: pointer;
             }
         }
     }

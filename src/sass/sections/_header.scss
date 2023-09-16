@@ -6,9 +6,14 @@
     position: relative;
 
     &__icon{
-        z-index: 999;
+        z-index: 9999;
         font-size: $fs-800;
         color: map-get($clr-primary, 500 );
+        cursor: pointer;
+
+        &:is(:hover){
+            color: map-get($clr-primary, 600 );
+        }
     }
 
     &__menu{
@@ -19,6 +24,7 @@
         width: 80%;
         background-color: $heade-menu-bg-mobile;
         @include flex_box($direction : column);
+        z-index: 999;
         
         &-nav{
             list-style: none;
