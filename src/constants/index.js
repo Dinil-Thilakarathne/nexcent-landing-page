@@ -17,7 +17,7 @@ export const heroContent = {
     imgAlt : "hero image"
 }
 
-export const clients = [
+export const clientsContent = [
     {label : 'client-1', imgUrl : clientLogo1},
     {label : 'client-2', imgUrl : clientLogo2},
     {label : 'client-3', imgUrl : clientLogo3},
@@ -25,4 +25,10 @@ export const clients = [
     {label : 'client-5', imgUrl : clientLogo5},
     {label : 'client-6', imgUrl : clientLogo6},
     {label : 'client-7', imgUrl : clientLogo7},
+]
+
+export const servicesContent = [
+    {icon: 'users-alt', header: 'Membership Organisations', description: 'Our membership management software provides full automation of membership renewals and payments'},
+    {icon: 'building', header: 'National Associations', description: 'Our membership management software provides full automation of membership renewals and payments'},
+    {icon: 'comment-alt-lines', header: 'Clubs And Groups', description: 'Our membership management software provides full automation of membership renewals and payments'},
 ]

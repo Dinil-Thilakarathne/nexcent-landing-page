@@ -20,7 +20,7 @@ const Header = () => {
             restDelta: 2
           }
         }),
-        closed: (width ) => ({
+        closed: ( ) => ({
           clipPath: `circle(0 at 90% 40px)`,
           transition: {
             delay: 0.5,
@@ -42,7 +42,7 @@ const Header = () => {
                 <img src={logo} alt="" />
              </div>
              <i 
-                class="uil uil-bars header__icon"
+                className="uil uil-bars header__icon"
                 onClick={() => setIsOpen(isOpen => !isOpen)}
             />
              <motion.nav 
@@ -52,7 +52,7 @@ const Header = () => {
             >
                 <ul className="header__menu-nav">
                     {navLinks.map((link) => (
-                        <li className="nav-item">
+                        <li className="nav-item" key={link.label}>
                             <a className="nav-link" href={link.href}>{link.label}</a>
                         </li>
                     ))}

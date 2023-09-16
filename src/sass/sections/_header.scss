@@ -3,7 +3,11 @@
 .header{
     @include flex_box($justify : space-between);
     height: $header-h;
-    position: relative;
+    position: fixed;
+    background-color: hsla(0,0%,100%,.75);
+    z-index: 99;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
 
     &__icon{
         z-index: 9999;
@@ -24,7 +28,7 @@
         width: 80%;
         background-color: $heade-menu-bg-mobile;
         @include flex_box($direction : column);
-        z-index: 999;
+        z-index: 99;
         
         &-nav{
             list-style: none;

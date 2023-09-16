@@ -1,0 +1,12 @@
+@use '../abstracts/' as *;
+
+.clients{
+
+    &-main{
+        width: 100%;
+        @include flex_box($direction: column, $align: flex-start);
+    }
+    &-content{
+        margin-top: 20px;
+    }
+}

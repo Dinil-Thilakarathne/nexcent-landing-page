@@ -1,11 +1,17 @@
 @use '../abstracts/' as *;
 
 .hero{
+    padding-top: $header-h;
     height: $hero-h;
     @include flex_box($direction : column-reverse, $justify: space-around);
 
     &-content{
         @include flex_box($direction : column, $align: flex-start, $row-gap: 10px);
+
+        & *:not(:last-child){
+            position: relative;
+            z-index: -1;
+        }
 
         &__header{
             font-size: $hero-content-header-fs;
