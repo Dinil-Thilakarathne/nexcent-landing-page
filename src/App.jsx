@@ -1,4 +1,4 @@
-import { Client, Header, Hero, Services } from './components';
+import { About, Client, Header, Hero, Services } from './components';
 import './sass/styles.scss';
 
 const  App = () => {
@@ -8,6 +8,7 @@ const  App = () => {
       <Hero/>
       <Client/>
       <Services/>
+      <About/>
     </>
   )
 }

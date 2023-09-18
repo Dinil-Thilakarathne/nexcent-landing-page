@@ -1,4 +1,4 @@
-import { clientLogo1, clientLogo2, clientLogo3, clientLogo4, clientLogo5, clientLogo6, clientLogo7, heroImg } from "../assets"
+import { clientLogo1, clientLogo2, clientLogo3, clientLogo4, clientLogo5, clientLogo6, clientLogo7, heroImg, illustration1 } from "../assets"
 
 export const navLinks = [
     {label: "Home", href: '/'},
@@ -32,3 +32,10 @@ export const servicesContent = [
     {icon: 'building', header: 'National Associations', description: 'Our membership management software provides full automation of membership renewals and payments'},
     {icon: 'comment-alt-lines', header: 'Clubs And Groups', description: 'Our membership management software provides full automation of membership renewals and payments'},
 ]
+
+export const aboutContent = {
+    imgUrl : {illustration1},
+    header : 'The unseen of spending three years at Pixelgrade',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis.',
+    btnText : 'Learn more'
+}

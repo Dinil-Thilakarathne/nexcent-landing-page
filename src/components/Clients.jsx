@@ -1,5 +1,6 @@
 import { useRef, useState } from "react"
 import {Swiper, SwiperSlide} from 'swiper/react';
+import { motion} from "framer-motion";
 
 // Import Swiper styles
 import 'swiper/css';
@@ -10,8 +11,30 @@ import {Autoplay} from 'swiper/modules'
 import { clientsContent } from "../constants";
 
 const Client = () => {
+    const cardVariants =  {
+        offscreen: {
+          x: 100,
+          scale: 0
+        },
+        onscreen: {
+          x: 0,
+          scale:1,
+          transition: {
+            type: "spring",
+            bounce: 0.4,
+            duration: 0.75
+          }
+        }
+    };
+
     return (
-        <div className="clients section">
+        <motion.div
+         className="clients section"
+         initial={cardVariants.offscreen}
+         whileInView={cardVariants.onscreen}
+         variants={cardVariants}
+         viewport={{once: false}}
+        >
             <div className="clients-main">
                 <h1>
                     Our Clients
@@ -47,7 +70,7 @@ const Client = () => {
                     </SwiperSlide>
                 ))}
             </Swiper>
-        </div>
+        </motion.div>
     )
 }
 
