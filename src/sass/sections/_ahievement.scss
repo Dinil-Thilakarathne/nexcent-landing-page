@@ -1,0 +1,35 @@
+@use '../abstracts/' as *;
+
+.achievement{
+    margin-top: 75px;
+    min-height: calc(100vh - 75px);
+    background-color: map-get($clr-primary, 100 );
+    @include flex_box($direction: column, $justify: space-around);
+
+    &-top{
+        width: 100%;
+        @include flex_box($direction: column);
+    }
+    &-content{
+        width: 100%;
+        @include grid($cols: 1, $justify: sterch, $col-gap:10px, $row-gap: 10px);
+        & .card{
+            background-color: map-get($clr-neutral, 400 );
+            @include flex_box($justify: space-around);
+            padding: 1rem 1.25rem;
+            border: none;
+            border-radius: $size-2;
+
+            &__icon{
+                font-size: $fs-800;
+            }
+
+            &__content{
+
+                &-header{
+                    color:  map-get($clr-primary, 500 );
+                }
+            }
+        }
+    }
+}
