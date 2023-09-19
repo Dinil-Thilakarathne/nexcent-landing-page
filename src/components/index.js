@@ -5,6 +5,7 @@ import Services from "./Services";
 import About from "./About";
 import Achievement from "./Achievement";
 import Calendar from "./Calendar";
+import Customer from "./Customer";
 
 export {
     Header,
@@ -13,5 +14,6 @@ export {
     Services,
     About,
     Achievement,
-    Calendar
+    Calendar,
+    Customer
 }

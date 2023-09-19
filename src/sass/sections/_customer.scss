@@ -1,0 +1,46 @@
+@use '../abstracts/' as *;
+
+.customer{
+    margin-top: 75px;
+    min-height: calc(100vh - 75px);
+    @include flex_box($direction:column, $justify:space-around);
+
+    &-img{
+        max-height: 40vh;
+    }
+
+    &-content{
+        min-height: 50vh;
+        @include flex_box($direction: column, $justify: space-around, $align: flex-start);
+
+        &__description{
+            font-size: $fs-300;
+        }
+        & .customer-info{
+            color: map-get($clr-primary, 400 );
+            & p{
+                @extend .customer-content__description;
+            }
+        }
+
+        & .customers{
+            width: 100%;
+            @include flex_box($justify: space-between);
+            
+            & ul{
+                & li:not(:last-child){
+                    display: none;
+                }
+            }
+            & span{
+                height: 100%;
+                @include flex_box();
+                color: map-get($clr-primary, 400 );
+                & i{
+                    font-size: $fs-600;
+                    padding-left: .25rem;
+                }
+            }
+        }
+    }
+}
