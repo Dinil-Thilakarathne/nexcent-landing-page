@@ -1,4 +1,4 @@
-import { clientLogo1, clientLogo2, clientLogo3, clientLogo4, clientLogo5, clientLogo6, clientLogo7, heroImg, illustration1 } from "../assets"
+import { blogImg1, blogImg2, blogImg3, clientLogo1, clientLogo2, clientLogo3, clientLogo4, clientLogo5, clientLogo6, clientLogo7, heroImg, illustration1 } from "../assets"
 
 export const navLinks = [
     {label: "Home", href: '/'},
@@ -59,3 +59,9 @@ export const customerContent = {
     customerDescrtiption : 'British Dragon Boat Racing Association',
     icon : 'arrow-right'
 }
+
+export const blogPosts = [
+    {label : 'post-1', postImg : blogImg1, postBtn: 'Read more'},
+    {label : 'post-2', postImg : blogImg2, postBtn: 'Read more'},
+    {label : 'post-3', postImg : blogImg3, postBtn: 'Read more'},
+]
