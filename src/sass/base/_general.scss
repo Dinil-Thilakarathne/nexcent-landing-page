@@ -19,4 +19,8 @@ li{
 .section{
     width: min(100%, 1440px);
     padding: $p-2;
+    
+    @media (min-width:1440px){
+        padding: 0 calc((100vw - 1440px)/2);
+    }
 }

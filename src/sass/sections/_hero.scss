@@ -36,4 +36,10 @@
     &-img{
         width: 80%;
     }
+
+    @include mq(large){
+        & {
+            flex-direction: row;
+        }
+    }
 }

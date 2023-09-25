@@ -4,10 +4,16 @@
     @include flex_box($justify : space-between);
     height: $header-h;
     position: fixed;
+    left: 0;
     background-color: hsla(0,0%,100%,.75);
     z-index: 99;
     -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
+    
+    @media (min-width:1440px) {
+        left: calc((100vw - 1440px)/2);
+
+    }
 
     &__icon{
         z-index: 9999;
@@ -25,7 +31,7 @@
         top: 0;
         right: 0;
         height: 100vh;
-        width: 80%;
+        width: min(80%, 480px);
         background-color: $heade-menu-bg-mobile;
         @include flex_box($direction : column);
         z-index: 99;
