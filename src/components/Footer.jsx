@@ -1,5 +1,6 @@
 import { icon, logo } from "../assets"
 import { footerLinks } from "../constants"
+import { FaInstagram,FaDribbble,FaXTwitter,FaYoutube } from "react-icons/fa6";
 
 const Footer = () => {
     return (
@@ -21,10 +22,10 @@ const Footer = () => {
                     </span>
                 </div>
                 <div className="footer-icons">
-                    {/* <FaInstagram/>
+                    <FaInstagram/>
                     <FaDribbble/>
                     <FaXTwitter/>
-                    <FaYoutube/> */}
+                    <FaYoutube/>
                 </div>
             </div>
             <div className="footer-links">
