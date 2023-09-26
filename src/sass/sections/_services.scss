@@ -1,6 +1,7 @@
 @use '../abstracts/' as *;
 
 .services{
+    @include flex_box($direction: column, $justify: space-around);
 
     &-main{
         &__header{
@@ -42,6 +43,14 @@
 
         @include mq(large){
             grid-template-columns: repeat(3, 1fr);
+
+
+        }
+    }
+    @include mq(large){
+        &-content,
+        &-main{
+            width: 100%;
         }
     }
 }

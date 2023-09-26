@@ -1,12 +1,19 @@
 @use '../abstracts/' as *;
 
 .blog{
+    padding-block: 5rem;
     &-top{
         width: 100%;
         @include flex_box($direction: column);
 
         &__subheader{
             font-size: $fs-300;
+            text-align: center;
+            padding: 0 1rem;
+
+            @include mq(large){
+                padding: 0 2.5rem;
+            }
         }
     }
 
@@ -35,5 +42,10 @@
             
             }
         }
+        @include mq(large){
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.25rem;
+        }
     }
+
 }

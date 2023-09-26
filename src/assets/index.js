@@ -14,6 +14,7 @@ import clientLogo6 from './Logo-client-6.png'
 import clientLogo7 from './Logo-client-7.png'
 import logo from './logo.png'
 import favicon from './favicon.png'
+import icon from './icon.png'
 
 export {
     customerImg,
@@ -31,5 +32,6 @@ export {
     clientLogo6,
     clientLogo7,
     logo,
-    favicon
+    favicon,
+    icon
 }

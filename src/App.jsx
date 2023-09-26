@@ -1,4 +1,4 @@
-import { About, Achievement, Blog, Calendar, Client, Customer, Header, Hero, Services } from './components';
+import { About, Achievement, Blog, Calendar, Client, Customer, Footer, Header, Hero, Services } from './components';
 import './sass/styles.scss';
 
 const  App = () => {
@@ -13,6 +13,7 @@ const  App = () => {
       <Calendar/>
       <Customer/>
       <Blog/>
+      <Footer/>
     </>
   )
 }

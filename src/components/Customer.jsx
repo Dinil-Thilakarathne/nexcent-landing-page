@@ -1,5 +1,5 @@
 import { customerImg } from "../assets"
-import { clientsContent, customerContent } from "../constants"
+import { clientsContent, customerContent, customerList } from "../constants"
 
 const Customer = () => {
     return (
@@ -17,7 +17,7 @@ const Customer = () => {
                 </div>
                 <div className="customers">
                     <ul>
-                        {clientsContent.map((client) => (
+                        {customerList.map((client) => (
                             <li>
                                 <img src={client.imgUrl} alt="" />
                             </li>

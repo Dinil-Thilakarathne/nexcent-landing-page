@@ -7,6 +7,7 @@ import Achievement from "./Achievement";
 import Calendar from "./Calendar";
 import Customer from "./Customer";
 import Blog from "./Blog";
+import Footer from "./Footer";
 
 export {
     Header,
@@ -17,5 +18,6 @@ export {
     Achievement,
     Calendar,
     Customer,
-    Blog
+    Blog,
+    Footer
 }

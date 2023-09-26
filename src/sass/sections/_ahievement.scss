@@ -32,4 +32,19 @@
             }
         }
     }
+    @include mq(large){
+        flex-direction: row;
+        gap: 1.25rem;
+        min-height: fit-content;
+        padding-block: 5rem;
+
+        &-top{
+            width: 40%;
+            align-items: flex-start;
+        }
+        &-content{
+            width: 60%;
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
 }

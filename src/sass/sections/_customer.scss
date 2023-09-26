@@ -10,8 +10,7 @@
     }
 
     &-content{
-        min-height: 50vh;
-        @include flex_box($direction: column, $justify: space-around, $align: flex-start);
+        @include flex_box($direction: column, $justify: space-around, $align: flex-start, $row-gap: 1.25rem);
 
         &__description{
             font-size: $fs-300;
@@ -39,6 +38,33 @@
                 & i{
                     font-size: $fs-600;
                     padding-left: .25rem;
+                }
+            }
+        }
+    }
+    @include mq(large){
+        min-height: fit-content;
+        padding-block: 8rem;
+        flex-direction: row;
+
+        &-img{
+            width: 40%;
+        }
+
+        &-content{
+            width: 60%;
+            min-height: 50%;
+
+            & .customers{
+                width: 100%;
+                @include flex_box($justify: space-between);
+                
+                & ul{
+                    width: 60%;
+                    @include flex_box($justify: space-around);
+                    & li:not(:last-child){
+                        display: block;
+                    }
                 }
             }
         }

@@ -9,7 +9,7 @@
         @include flex_box($direction: column, $align: flex-start, $row-gap: 10px);
 
         &__header{
-            font-size: $hero-content-header-fs;
+            font-size: $fs-800;
         }
         &__description{
             font-size: $hero-content-description-fs;
@@ -26,6 +26,19 @@
                 background-color: map-get($clr-primary, 400 );
                 cursor: pointer;
             }
+        }
+    }
+    @include mq(large){
+        min-height: fit-content;
+        padding-block: 8rem;
+        flex-direction: row;
+
+        &-img{
+            width: 50%;
+        }
+
+        &-content{
+            width: 50%;
         }
     }
 }
