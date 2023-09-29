@@ -2,7 +2,7 @@
 
 .hero{
     padding-top: $header-h;
-    height: $hero-h;
+    min-height: $hero-h;
     @include flex_box($direction : column-reverse, $justify: space-around);
 
     &-content{
